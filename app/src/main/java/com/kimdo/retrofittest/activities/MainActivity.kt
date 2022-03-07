@@ -3,7 +3,6 @@ package com.kimdo.retrofittest.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.kimdo.retrofittest.R
 import com.kimdo.retrofittest.databinding.ActivityMainBinding
 import com.kimdo.retrofittest.models.ResponseData
 import com.kimdo.retrofittest.models.RetrofitClient
@@ -42,16 +41,11 @@ class MainActivity : AppCompatActivity() {
                             Log.d(TAG, it.toString() )
                             Log.d(TAG, it.title)
                         }
-
                     }
-
                     override fun onFailure(call: Call<ResponseData>, t: Throwable) {
                         Log.e("RETRO_ERR", "Error")
                     }
-
                 })
         }
-
-
     }
 }
